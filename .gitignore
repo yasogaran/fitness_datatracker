@@ -9,6 +9,10 @@ dist/
 web-build/
 expo-env.d.ts
 
+data_collector_app_spec.md
+CLAUDE.md
+claude_code_prompts.md
+
 # Native
 .kotlin/
 *.orig.*
@@ -41,6 +45,3 @@ yarn-error.*
 /android
 
 
-data_collector_app_spec.md
-CLAUDE.md
-claude_code_prompts.md
