@@ -87,6 +87,13 @@ const MIGRATIONS: string[] = [
     rested INTEGER
   );
   `,
+  // v2: key/value store for app flags (manual checklist ticks, last check time)
+  `
+  CREATE TABLE app_setting (
+    key TEXT PRIMARY KEY NOT NULL,
+    value TEXT NOT NULL
+  );
+  `,
 ];
 
 export async function migrate(db: SQLiteDatabase): Promise<void> {
