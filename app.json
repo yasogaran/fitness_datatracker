@@ -7,7 +7,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "platforms": ["android"],
+    "platforms": [
+      "android"
+    ],
     "android": {
       "package": "com.hikelogger.app",
       "adaptiveIcon": {
@@ -39,7 +41,16 @@
             "minSdkVersion": 29
           }
         }
-      ]
+      ],
+      "react-native-health-connect",
+      [
+        "expo-location",
+        {
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true
+        }
+      ],
+      "expo-notifications"
     ],
     "experiments": {
       "typedRoutes": true
